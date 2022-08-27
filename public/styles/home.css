@@ -2,13 +2,16 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   padding: 0;
-  margin: 3% 15% 3% 15%;
+  margin: 6.38% 0 6.38% 0;
+  background-color: #E5E5E5;
 }
 
 /* Nav bar styles */
 
 .nav_bar {
+  margin: 0 11.81% 0 11.81%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,7 +27,8 @@ nav ul {
 }
 
 nav ul li {
-  padding: 0 20% 0 20%;
+  padding: 0 20.49% 0 20.49%;
+  font-size: 1.063rem;
 }
 
 nav ul li a:link {
@@ -48,36 +52,42 @@ nav ul li a:hover {
 }
 
 .primary_button {
+  font-size: 1.063rem;
   background-color: #072ac8;
   color: white;
   border: none;
-  padding: 12px 30px;
+  padding: 0.938rem 1.875rem;
 }
 
-/* Section 1 styles */
+/* Section 1 */
 
 .hero_section {
-  margin-top: 4%;
+  margin: 10.47% 11.81% 0 11.81%;
   display: flex;
   flex-direction: row;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 700;
   color: #292e47;
-  line-height: 120%;
+}
+
+.main_title {
+  margin: 16.76% 0 4.62% 0;
 }
 
 .hero_p {
   color: #6b708d;
   font-weight: 400;
-  line-height: 150%;
-  margin: -2% 0 6% 0;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  margin: 0 0 6.15% 0;
 }
 
 .tertiary_button {
   color: #6b708d;
+  font-size: 1.063rem;
   border: none;
   background: none;
 }
@@ -90,7 +100,7 @@ h1 {
 }
 
 #blue_hero_button {
-  width: 30%;
+  padding: 0.938rem 2.313rem !important;
 }
 
 #tertiary_hero_button {
@@ -111,6 +121,7 @@ h1 {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  align-items: end;
 }
 
 .hero_grid img {
@@ -122,8 +133,88 @@ h1 {
 
 .hero_grid_1 {
   grid-area: 1 / 1 / 2 / 2;
+  height: 90%;
 }
 
 .hero_grid_3 {
   grid-area: 3 / 3 / 4 / 4;
+}
+
+/* Section 2 */
+
+.clients_section {
+  margin: 11.47% 11.81% 19.96% 11.81%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.clients_section img {
+  filter: grayscale(100%);
+}
+
+/* Section 3 */
+
+.projects_section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 11.81vw 0 11.81vw;
+}
+
+.projects_section h2 {
+  font-weight: 500;
+  margin: 0 0 6.38vh 0;
+  font-size: 2.5rem;
+  color: #292E47;
+}
+
+.cards_wrapper {
+  width: 76.38vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3.63%;
+}
+
+.card {
+  display: flex;
+  flex: 1 1 0px;
+  flex-direction: column;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.project_banner {
+  object-fit: cover;
+  max-width: 100%;
+  aspect-ratio: 1.5;
+}
+
+.card_details {
+  margin: 10% 0 0 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card_description {
+  font-size: 1.063rem;
+  font-weight: 400;
+  color: #6b708d;
+}
+
+.seconday_button{
+  border: none;
+  background: none;
+  font-size: 1.063rem;
+  font-weight: 400;
+  color: #072ac8;
+  align-self:flex-start;
+  margin: 10% 0 10% 10%;
+  padding: 0;
 }
