@@ -12,7 +12,7 @@
       <div class="nav_bar">
         <div>
           <a href="index.html"
-            ><img src="../assets/logos/circle.svg" alt="Circle logo"
+            ><img src="../assets/logos/circle.svg" alt="Circle logo" class="home_logo"
           /></a>
         </div>
         <nav>
@@ -27,9 +27,9 @@
         </div>
       </div>
     </header>
+
     <!-- Section 1 - Hero Section-->
     <section class="hero_section">
-      <!-- Column with title, paragraph, and 2 buttons -->
       <div class="hero_div">
         <h1 class="main_title">
           Empower Your<br />Business With<br />Stunning Design!
@@ -57,6 +57,7 @@
         </div>
       </div>
     </section>
+
     <!-- Section 2 - Clients Section-->
     <section class="clients_section">
       <img src="../assets/logos/airbnb-logo.svg" alt="Airbnb logo" />
@@ -65,13 +66,14 @@
       <img src="../assets/logos/fedex-logo.svg" alt="Fedex logo" />
       <img src="../assets/logos/amazon-logo.svg" alt="Amazon logo" />
     </section>
+
     <!-- Section 3 - Projects Section-->
-    <section class="projects_section">
+    <section class="cards_section">
       <h2>Recent Projects</h2>
       <div class="cards_wrapper">
         <div class="card">
           <img
-            class="project_banner"
+            class="banner"
             src="../assets/projects-section/1.jpeg"
             alt="Project banner"
           />
@@ -83,7 +85,7 @@
         </div>
         <div class="card">
           <img
-            class="project_banner"
+            class="banner"
             src="../assets/projects-section/2.jpeg"
             alt="Project banner"
           />
@@ -95,7 +97,7 @@
         </div>
         <div class="card">
           <img
-            class="project_banner"
+            class="banner"
             src="../assets/projects-section/3.jpeg"
             alt="Project banner"
           />
@@ -107,6 +109,7 @@
         </div>
       </div>
     </section>
+
     <!-- Section 4 - Testimonials-->
     <section class="testimonials_section">
       <div class="testimonials">
@@ -114,24 +117,24 @@
           <img src="../assets/testimonial-section/orbit.png" alt="Orbit" class="orbit"/>
         </div>
         <div class="testimonials_grid_2">
-          <img src="../assets/testimonial-section/memoji-1.png" alt="Memoji" class="memoji"/>
+          <img src="../assets/testimonial-section/memoji-1.png" alt="Memoji" class="memoji" id="memoji_1"/>
         </div>
         <div class="testimonials_grid_3">
           <h3>Hear What Our Clients Have To Say</h3>
         </div>
         <div class="testimonials_grid_4">
-          <img src="../assets/testimonial-section/memoji-2.png" alt="Memoji" class="memoji"/>
+          <img src="../assets/testimonial-section/memoji-2.png" alt="Memoji" class="memoji" id="memoji_2"/>
         </div>
         <div class="testimonials_grid_5"></div>
         <div class="testimonials_grid_6">
           <div>
-            <p>"Circle helped us through every stage of our startup"</br>
-            We really enjoyed working with you."</p>
+            <div>"Circle helped us through every stage of our startup.</div>
+            <div>We really enjoyed working with you."</div>
           </div>
         </div>
         <div class="testimonials_grid_7"></div>
         <div class="testimonials_grid_8">
-          <img src="../assets/testimonial-section/memoji-3.png" alt="Memoji" class="memoji"/>
+          <img src="../assets/testimonial-section/memoji-3.png" alt="Memoji" class="memoji" id="memoji_3"/>
         </div>
         <div class="testimonials_grid_9">
             <div>
@@ -147,12 +150,77 @@
             </div>
         </div>
         <div class="testimonials_grid_10">
-          <img src="../assets/testimonial-section/memoji-4.png" alt="Memoji" class="memoji"/>
+          <img src="../assets/testimonial-section/memoji-4.png" alt="Memoji" class="memoji" id="memoji_4"/>
         </div>
       </div>
     </section>
-    <div>
-      Testestestest
-    </div>
+
+    <!-- Section 5 - Services -->
+    <section class="cards_section">
+      <h2>Our Services</h2>
+      <div class="cards_wrapper">
+        <div class="card">
+          <div class="icon_wrapper">
+          <img
+            class="icon"
+            src="../assets/services-section/icons/1.svg"
+            alt="Service icon"
+          />
+        </div>
+          <div class="card_details">
+            <div class="card_title">User Interface Design</div>
+            <p class="card_description">Circle provides you with a </br> stunning user interface design </br> that is accessible to everyone.</p>
+            <button class="seconday_button">Learn more</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon_wrapper">
+          <img
+            class="icon"
+            src="../assets/services-section/icons/2.svg"
+            alt="Service icon"
+          />
+        </div>
+          <div class="card_details">
+            <div class="card_title">User Experience Design</div>
+            <p class="card_description">Circle always focuses on </br>delivering the best user </br>experience to your customers.</p>
+            <button class="seconday_button">Learn more</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon_wrapper">
+          <img
+            class="icon"
+            src="../assets/services-section/icons/3.svg"
+            alt="Service icon"
+          />
+        </div>
+          <div class="card_details">
+            <div class="card_title">Application Development</div>
+            <p class="card_description">We develop high-quality mobile </br>and web applications using the </br>latest technology stack.</p>
+            <button class="seconday_button">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sub-section - Subscription form -->
+    <section class="subscription_form">
+      <form class="subscription_form_layout">
+      <h3 class="subscribe_title">
+        Do you have any questions?
+      </h3>
+      <div class="subtitle">
+        Let us help you!
+      </div>
+        <div class="form_body">
+          <div class="email_input_layout">
+            <input type="email" class="email_input" placeholder="Enter your email">
+          </div>
+          <button type="submit" class="primary_button" id="subscribe_button">Subscribe</button>
+        </div>
+      </form>
+    </section>
+
   </body>
 </html>
