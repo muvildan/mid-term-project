@@ -438,3 +438,54 @@ h1 {
   padding: 2.64vh 4.2vw;
   background-color: #072ac8;
 }
+
+/* Footer */
+
+footer {
+  margin: 18.21vh 11.81vw 0 11.81vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.73vh;
+}
+
+.footer_logo {
+  width: 6.95vw;
+}
+
+.circle_address {
+  font-size: 1.063rem;
+  font-weight: 400;
+  color: #6B708D;
+}
+
+.footer_2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-size: 1.063rem;
+  font-weight: 400;
+  gap: 7.36vw;
+  color: #6B708D;
+
+}
+
+footer ul li a {
+  text-decoration: none;
+}
+
+footer ul li a:visited {
+  text-decoration: none;
+  color: #6B708D;
+}
