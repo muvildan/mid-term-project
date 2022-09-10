@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 6.38vh 0 6.38vh 0;
+  background-color: #e5e5e5;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #292e47;
+}
+
+/* Header */
+
+/* @keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+.nav_bar {
+  /* transition: transform 250ms ease-in translateY(-10px); */
+  /* animation: 1s ease-out 0s 1 slideInFromLeft; */
+  margin: 0 11.81vw 0 11.81vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  padding-right: 4.17vw;
+  font-size: 1.063rem;
+  font-weight: 500;
+}
+
+nav ul li a:link {
+  color: #6b708d;
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: #6b708d;
+  text-decoration: none;
+}
+
+nav ul li a:active {
+  color: #072ac8;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #072ac8;
+  text-decoration: none;
+}
+
+.home_logo {
+  width: 4.2vw;
+  height: 1.68vh;
+}
+
+.primary_button {
+  font-size: 1.063rem;
+  background-color: #072ac8;
+  color: white;
+  border: none;
+  padding: 1.37vh 2.29vw;
+}
+
+/* Sub-section */
+
+.subscription_form {
+  margin: 18.21vh 4.1vw 0 4.1vw;
+  background-color: #ffc600;
+  height: 45.54vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription_form_layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20.67vh;
+}
+
+.subscribe_title {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1.8vh 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #292e47;
+  opacity: 40%;
+}
+
+.form_body {
+  margin: 5vh 0 0 0;
+  gap: 1.39vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email_input_layout {
+  position: relative;
+  background-color: #f4f6fc;
+}
+
+.email_input {
+  border: none;
+  font-size: 1.063rem;
+  color: #292e47;
+  width: 27.29vw;
+  height: 7.29vh;
+  background: url("../assets/newsletter/icon/mail.svg") 2.26vw 2.28vh no-repeat
+    scroll;
+  padding-left: 4.86vw;
+}
+
+#subscribe_button {
+  padding: 2.64vh 4.2vw;
+  background-color: #072ac8;
+}
+
+/* Cards sections */
+
+.cards_section {
+  display: flex;
+  flex-direction: column;
+  margin: 18.21vh 11.81vw 0 11.81vw;
+  scroll-margin: 18.21vh;
+}
+
+.cards_section h2 {
+  font-weight: 500;
+  margin: 0 0 6.38vh 0;
+  font-size: 2.5rem;
+  color: #292e47;
+}
+
+.cards_wrapper {
+  width: 76.38vw;
+  height: 99, 74vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3.63%;
+}
+
+.card {
+  background-color: #ffff;
+  display: flex;
+  flex: 1 1 0px;
+  flex-direction: column;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 0.9vw 2.46vh -0.36vw,
+    rgba(0, 0, 0, 0.3) 0 0.56vw 1.46vh -0.56vw;
+}
+
+.banner {
+  object-fit: cover;
+  max-width: 100%;
+  aspect-ratio: 1.416;
+}
+
+.card_details {
+  margin: 2.73vh 0 0 2.08vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card_description {
+  font-size: 1.063rem;
+  font-weight: 400;
+  line-height: 2.73vh;
+  color: #6b708d;
+}
+
+.seconday_button {
+  border: none;
+  background: none;
+  font-size: 1.063rem;
+  font-weight: 400;
+  color: #072ac8;
+  align-self: flex-start;
+  margin: 10% 0 10% 0;
+  padding: 0;
+}
+
+/* Footer */
+
+footer {
+  margin: 18.21vh 11.81vw 0 11.81vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.73vh;
+}
+
+.footer_logo {
+  width: 6.95vw;
+}
+
+.circle_address {
+  font-size: 1.063rem;
+  font-weight: 400;
+  color: #6b708d;
+}
+
+.footer_2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-size: 1.063rem;
+  font-weight: 400;
+  gap: 7.36vw;
+  color: #6b708d;
+}
+
+footer ul li a {
+  text-decoration: none;
+}
+
+footer ul li a:visited {
+  text-decoration: none;
+  color: #6b708d;
+}

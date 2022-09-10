@@ -4,8 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
     <title>mid-term project - Contact us</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="nav_bar">
+        <div>
+          <a href="index.html"
+            ><img src="../assets/logos/circle.svg" alt="Circle logo" class="home_logo"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#Services">Services</a></li>
+          </ul>
+        </nav>
+        <div>
+          <button class="primary_button">Contact Us</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section – Contact form -->
+    <section>
+      <h1>Contact Us</h1>
+      <form method="post">
+        <div>
+          <label>Full Name *</label>
+          <input type="text" placeholder="Enter your full name">
+        </div>
+        <div class="double_input">
+          <div>
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email address">
+          </div>
+          <div>
+            <label>Phone</label>
+            <input type="number" placeholder="Enter your phone number">
+          </div>
+        </div>
+        <div>
+          <label>Message</label>
+          <textarea placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="primary_button" id="submit_button">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer_1">
+        <a href="index.html"
+            ><img src="../assets/logos/circle.svg" alt="Circle logo" class="footer_logo"
+          />
+        </a>
+        <div class="circle_address">
+          2972 Westheimer Rd. Santa Ana,</br>
+          Illinois 85486
+        </div>
+      </div>
+      <div class="footer_2">
+        <ul class="footer_ul">
+          <li><a href="">Team</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">About us</a></li>
+        </ul>
+        <ul class="footer_ul">
+          <li><a href="">Press</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/home.css" />
     <title>mid-term project - Home Page</title>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
     <header>
       <div class="nav_bar">
         <div>
@@ -18,12 +19,12 @@
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Services">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#services_section">Services</a></li>
           </ul>
         </nav>
         <div>
-          <button class="primary_button">Contact Us</button>
+          <button class="primary_button" onclick="location.href='contact-us.html'">Contact Us</button>
         </div>
       </div>
     </header>
@@ -68,7 +69,7 @@
     </section>
 
     <!-- Section 3 - Projects Section-->
-    <section class="cards_section">
+    <section class="cards_section" id="projects_section">
       <h2>Recent Projects</h2>
       <div class="cards_wrapper">
         <div class="card">
@@ -156,7 +157,7 @@
     </section>
 
     <!-- Section 5 - Services -->
-    <section class="cards_section">
+    <section class="cards_section" id="services_section">
       <h2>Our Services</h2>
       <div class="cards_wrapper">
         <div class="card">

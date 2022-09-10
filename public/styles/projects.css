@@ -1,7 +1,82 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap");
 
-body {
-  font-family: "Roboto", sans-serif;
-  padding: 0;
-  margin: 2% 5% 2% 5%;
+/* Section 1 - Project details */
+
+.project_details_section {
+  margin: 13.3vh 11.81vw 0 11.81vw;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #292e47;
+}
+
+.project_key_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5.47vh;
+}
+
+.subtitle {
+  color: #6B708D;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.completion_date {
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  gap: 0.15vw;
+}
+
+.completion_date div:last-child {
+  color: #6B708D;
+}
+
+.completion_date div:first-child {
+  color: #292E47;
+}
+
+.background_image {
+  position: absolute;
+  object-fit: cover;
+  width: 78.39vw;
+  height: 42.26vh;
+  margin-left: -1vw;
+  opacity: 0.4;
+  filter: blur(30px)
+}
+
+.foreground_image {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 40.44vh;
+  overflow: hidden;
+  margin-bottom: 4.55vh;
+}
+
+.project_details_section > p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #6B708D;
+}
+
+.project_details_section > p > br {
+  display: block;
+  content: "";
+  line-height: 2.73vh;
+}
+
+/* Section 2 – Other projects */
+
+.cards_section {
+  display: flex;
+  flex-direction: column;
+  margin: 8.47vh 11.81vw 0 11.81vw;
+  scroll-margin: 18.21vh;
 }
