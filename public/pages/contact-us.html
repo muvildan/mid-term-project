@@ -9,6 +9,7 @@
     <title>mid-term project - Contact us</title>
   </head>
   <body>
+    <script src="../../app.js"></script>
     <!-- Header -->
     <header>
       <div class="nav_bar">
@@ -33,26 +34,26 @@
     <!-- Section – Contact form -->
     <section>
       <h1>Contact Us</h1>
-      <form method="post">
+      <form id="form">
         <div>
-          <label>Full Name *</label>
-          <input type="text" placeholder="Enter your full name">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your full name" required>
         </div>
         <div class="double_input">
           <div>
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email address">
+            <label for="email" >Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email address" required>
           </div>
           <div>
-            <label>Phone</label>
-            <input type="number" placeholder="Enter your phone number">
+            <label for="phone" >Phone</label>
+            <input id="phone" name="phone" type="tel" pattern="/^\+[0-9]{11}$/" placeholder="Enter your phone number with a valir format (i.e. +34...)" required>
           </div>
         </div>
         <div>
-          <label>Message</label>
-          <textarea placeholder="Write your message here..."></textarea>
+          <label for="message" >Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." minlength="50" required></textarea>
         </div>
-        <button class="primary_button" id="submit_button">Submit</button>
+        <button class="primary_button" id="submit_button" type="submit" onclick="click">Submit</button>
       </form>
     </section>
 
