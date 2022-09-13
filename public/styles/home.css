@@ -1,3 +1,16 @@
+/* Nav links */
+
+#home_link {
+  color: #072ac8;
+  text-decoration: none;
+}
+
+#projects_link,
+#services_link {
+  color: #6b708d;
+  text-decoration: none;
+}
+
 /* Section 1 */
 
 @keyframes fadeInAnimation {
@@ -88,17 +101,7 @@
 
 /* Section 2 */
 
-/* @keyframes slideInFromRight {
-  0% {
-    transform: translateX(200%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-} */
-
 .clients_section {
-  /* animation: 1s ease-out 0s 1 slideInFromRight; */
   margin: 10.47vh 11.81vw 0 11.81vw;
   display: flex;
   flex-direction: row;
@@ -252,4 +255,142 @@
 .icon {
   width: 2.78vw;
   height: 3.64vh;
+}
+
+@media screen and (max-width: 415px), screen and (max-height: 737px) {
+  .main_title {
+    font-size: 2.75rem;
+    margin: 5vh 0 2.73vh 0;
+  }
+
+  .hero_section {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 0px;
+  }
+
+  .hero_p {
+    color: #6b708d;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin: 0 0 3.64vh 0;
+}
+
+  .cards_section {
+    margin-top: 10vh;
+  }
+
+  .cards_section h2 {
+    text-align: center;
+    margin: 0 0 4.38vh 0;
+  }
+
+  .cards_wrapper {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .card_details {
+    margin: 5.08vw;
+  }
+
+  .p_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+  }
+
+  .testimonials_section {
+    margin: 10vh 0;
+  }
+
+  .testimonials_grid_2,
+  .testimonials_grid_4,
+  .testimonials_grid_5,
+  .testimonials_grid_7,
+  .testimonials_grid_8,
+  .testimonials_grid_10 {
+    display: none;
+  }
+
+  .testimonials_grid_3 {
+    grid-area: 1 / 1 / 1 / 4;
+    margin: 0 10vw;
+  }
+
+  .testimonials_grid_3 h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .testimonials_grid_6 {
+    grid-area: 2 / 1 / 2 / 4;
+    margin: 0 10vw;
+  }
+
+  .testimonials_grid_6 div {
+    font-size: 1.2rem;
+  }
+
+  .testimonials_grid_9 {
+    grid-area: 3 / 2 / 3 / 3;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    line-height: 1.5;
+    gap: 1.3vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon_wrapper {
+    height: 12.56vw;
+    width: 7.29vh;
+    margin: 5.08vw;
+  }
+
+  .icon {
+    width: 5.78vw;
+    height: 3.64vh;
+}
+
+  #tertiary_hero_button,
+  #blue_hero_button {
+    width: 50%;
+    font-size: 1rem;
+  }
+
+  .clients_section {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .subscription_form {
+    margin: 10vh 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .email_input {
+    width: 52.29vw;
+    padding-left: 12.86vw;
+    background: url(../assets/newsletter/icon/mail.svg) 3.26vw 1.9vh no-repeat
+      scroll;
+  }
+
+  .subscription_form_layout {
+    height: auto;
+  }
+
+  #subscribe_button {
+    font-size: 1rem;
+  }
 }

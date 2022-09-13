@@ -1,8 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap");
 
+/* Nav links */
+
+#home_link,
+#projects_link,
+#services_link {
+  color: #6b708d;
+  text-decoration: none;
+}
+
+#contact_us {
+  color: #072ac8 !important;
+  text-decoration: none;
+}
+
 /* Section 1 – Contact us */
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 section {
+  animation: 3.5s ease-out 0s 1 fadeInAnimation;
   margin: 10.47vh 11.8vw 0 11.8vw;
 }
 
@@ -12,7 +36,7 @@ input {
   padding-left: 1.39vw;
   font-size: 1.063rem;
   font-weight: 400;
-  color: #6B708D;
+  color: #6b708d;
 }
 
 textarea {
@@ -22,16 +46,18 @@ textarea {
   font-family: "Roboto", sans-serif;
   font-size: 1.063rem;
   font-weight: 400;
-  color: #6B708D;
+  color: #6b708d;
 }
 
-input, textarea, label {
+input,
+textarea,
+label {
   display: block;
 }
 
 label {
   margin-bottom: 0.91vh;
-  color: #6B708D;
+  color: #6b708d;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -44,7 +70,7 @@ form {
 
 form > div > input {
   width: 75vw;
-  height: 6.38vh; 
+  height: 6.38vh;
 }
 
 .double_input {
@@ -56,7 +82,7 @@ form > div > input {
 
 .double_input > div > input {
   width: 35.42vw;
-  height: 6.38vh; 
+  height: 6.38vh;
 }
 
 textarea {
@@ -67,4 +93,43 @@ textarea {
 #submit_button {
   height: 7.29vh;
   padding: 1.37vh 0;
+}
+
+@media screen and (max-width: 415px), screen and (max-height: 737px) {
+
+  section {
+    margin: 5.47vh 7.8vw;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  form {
+    gap: 5vh;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  form > div > input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .double_input > div > input {
+    width: 39.42vw;
+  }
+
+  input {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }

@@ -20,18 +20,8 @@ h1 {
 
 /* Header */
 
-/* @keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-} */
 
 .nav_bar {
-  /* transition: transform 250ms ease-in translateY(-10px); */
-  /* animation: 1s ease-out 0s 1 slideInFromLeft; */
   margin: 0 11.81vw 0 11.81vw;
   display: flex;
   flex-direction: row;
@@ -53,23 +43,8 @@ nav ul li {
   font-weight: 500;
 }
 
-nav ul li a:link {
-  color: #6b708d;
-  text-decoration: none;
-}
-
-nav ul li a:visited {
-  color: #6b708d;
-  text-decoration: none;
-}
-
-nav ul li a:active {
-  color: #072ac8;
-  text-decoration: none;
-}
-
 nav ul li a:hover {
-  color: #072ac8;
+  color: #072ac8 !important;
   text-decoration: none;
 }
 
@@ -153,6 +128,7 @@ nav ul li a:hover {
 /* Cards sections */
 
 .cards_section {
+  animation: 3.5s ease-out 0s 1 fadeInAnimation;
   display: flex;
   flex-direction: column;
   margin: 18.21vh 11.81vw 0 11.81vw;
@@ -217,6 +193,7 @@ nav ul li a:hover {
   align-self: flex-start;
   margin: 10% 0 10% 0;
   padding: 0;
+  text-decoration: none;
 }
 
 /* Footer */
@@ -267,4 +244,97 @@ footer ul li a {
 footer ul li a:visited {
   text-decoration: none;
   color: #6b708d;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 415px), screen and (max-height: 737px) {
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    padding: 0;
+    margin: 2.38vh 0 6.38vh 0;
+    background-color: #e5e5e5;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .nav_bar {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #contact_us {
+    white-space: nowrap;
+    color: #6b708d;
+    text-decoration: none;
+    background: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin-right: 10px;
+  }
+
+  #contact_us :hover {
+    color: #072ac8 !important;
+    text-decoration: none;
+  }
+
+  nav ul {
+    padding: 0;
+    margin-left: 10px;
+  }
+
+  nav ul li {
+    padding-right: 2.17vw;
+    font-size: 0.75rem;
+}
+
+  .home_logo {
+    width: 18.2vw;
+    height: 5.68vh;
+    margin-left: 10px;
+  }
+
+  footer {
+    margin: 13.21vh 11.81vw 0 11.81vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer_logo {
+    width: 12.95vw;
+  }
+
+  .circle_address {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #6b708d;
+  }
+
+  .footer_2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer_ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 0.7rem;
+    font-weight: 400;
+    gap: 3.36vw;
+    color: #6b708d;
+  }
+
+  .footer_ul li {
+    white-space: nowrap;
+  }
 }
