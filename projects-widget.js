@@ -26,7 +26,7 @@ function createElements(data, project) {
       '<div class="card_details">' +
       `<div class="card_title">${data[option].title}</div>` +
       `<p class="card_description">${data[option].subtitle}</p>` +
-      `<a href="./projects.html?project=${option}" class="seconday_button">Learn more</a>` +
+      `<a href="/public/pages/projects.html?project=${option}" class="seconday_button">Learn more</a>` +
       "</div>";
 
     wrapper.appendChild(element);

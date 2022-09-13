@@ -9,11 +9,6 @@
   text-decoration: none;
 }
 
-#contact_us {
-  color: #072ac8 !important;
-  text-decoration: none;
-}
-
 /* Section 1 – Contact us */
 
 @keyframes fadeInAnimation {
@@ -96,6 +91,11 @@ textarea {
 }
 
 @media screen and (max-width: 415px), screen and (max-height: 737px) {
+
+  #contact_us {
+    color: #072ac8 !important;
+    text-decoration: none;
+  }
 
   section {
     margin: 5.47vh 7.8vw;
