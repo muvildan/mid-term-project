@@ -2,37 +2,37 @@
   {
     "title": "Simplify",
     "subtitle": "UI Design & App Development",
-    "image": "../assets/projects-section/1.jpeg",
+    "image": "/public/assets/projects-section/1.jpeg",
     "completion_date": "June 22, 2021"
   },
   {
     "title": "Dashcoin",
     "subtitle": "Web Development",
-    "image": "../assets/projects-section/2.jpeg",
+    "image": "/public/assets/projects-section/2.jpeg",
     "completion_date": "August 31, 2019"
   },
   {
     "title": "Vectorify",
     "subtitle": "User Experience Design",
-    "image": "../assets/projects-section/3.jpeg",
+    "image": "/public/assets/projects-section/3.jpeg",
     "completion_date": "June 22, 2021"
   },
   {
     "title": "Orbit",
     "subtitle": "UI Design",
-    "image": "../assets/projects-section/4.jpeg",
+    "image": "/public/assets/projects-section/4.jpeg",
     "completion_date": "June 22, 2021"
   },
   {
     "title": "Purify",
     "subtitle": "UX/UI Design",
-    "image": "../assets/projects-section/5.jpeg",
+    "image": "/public/assets/projects-section/5.jpeg",
     "completion_date": "June 22, 2021"
   },
   {
     "title": "CryptoPie",
     "subtitle": "App Development",
-    "image": "../assets/projects-section/6.jpeg",
+    "image": "/public/assets/projects-section/6.jpeg",
     "completion_date": "October 21, 2018"
   }
 ]

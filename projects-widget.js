@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const url = new URL(url_string);
   const project = url.searchParams.get("project");
 
-  fetch("../assets/projects.json")
+  fetch("/public/assets/projects.json")
     .then((response) => response.json())
     .then((data) => createElements(data, project))
     .catch((error) => console.log(error));
